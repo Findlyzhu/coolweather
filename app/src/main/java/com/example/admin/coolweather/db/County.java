@@ -8,13 +8,6 @@ public class County extends DataSupport {
     private int cityid;
     private String countyname;
 
-    public County(int id,String countyname,int countycode,int cityid){
-        this.id = id;
-        this.countyname = countyname;
-        this.cityid = cityid;
-        this.countycode = countycode;
-    }
-
     public int getid(){
         return id;
     }

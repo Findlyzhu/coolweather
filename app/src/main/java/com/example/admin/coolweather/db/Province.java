@@ -8,12 +8,6 @@ public class Province extends DataSupport {
     private String provincename = "";
     private int provicecode = 0;
 
-    public Province(int id,String provincename,int provicecode){
-        this.id = id;
-        this.provicecode = provicecode;
-        this.provincename = provincename;
-    }
-
     public int getid(){
         return id;
     }
