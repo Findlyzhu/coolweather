@@ -15,7 +15,7 @@ public class Utility {
     * 解析和处理省级数据
     * */
     public static boolean handleProvinceResquest(String response){
-        if(TextUtils.isEmpty(response)){
+        if(!TextUtils.isEmpty(response)){
             try{
                 JSONArray allProvince = new JSONArray(response);
                 for (int i=0;i<allProvince.length();i++){
@@ -36,7 +36,7 @@ public class Utility {
     * 解析和处理市级数据
     * */
     public static boolean handleCityResquest(String response,int provinceId){
-        if(TextUtils.isEmpty(response)){
+        if(!TextUtils.isEmpty(response)){
             try{
                 JSONArray allCity = new JSONArray(response);
                 for (int i=0;i<allCity.length();i++){
@@ -58,7 +58,7 @@ public class Utility {
      * 解析和处理县级数据
      * */
     public static boolean handleCountyResquest(String response,int cityid){
-        if(TextUtils.isEmpty(response)){
+        if(!TextUtils.isEmpty(response)){
             try{
                 JSONArray allCounty = new JSONArray(response);
                 for (int i=0;i<allCounty.length();i++){
